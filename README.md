@@ -3,6 +3,7 @@
 ### Exercise 1
 
 '''bash
+
 PS C:\Users\Lenovo\Desktop\work1\Coursera\Ojemba\Git_ba
 sics\Git_basics> git init
 Reinitialized existing Git repository in C:/Users/Lenov
@@ -92,4 +93,5 @@ PS C:\Users\Lenovo\Desktop\work1\Coursera\Ojemba\Git_basic
 s\Git_basics> git push origin --delete test
 To https://github.com/mnshimiyimana/Git_basics.git
  - [deleted]         test
- '''
+
+'''

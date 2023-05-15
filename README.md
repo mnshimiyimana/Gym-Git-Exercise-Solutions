@@ -10,32 +10,6 @@ Reinitialized existing Git repository in C:/Users/Lenov
 o/Desktop/work1/Coursera/Ojemba/Git_basics/Git_basics/.
 git/
 PS C:\Users\Lenovo\Desktop\work1\Coursera\Ojemba\Git_ba
-sics\Git_basics> git status
-On branch main
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be c
-ommitted)
-        README.md
-
-nothing added to commit but untracked files present (us
-e "git add" to track)
-PS C:\Users\Lenovo\Desktop\work1\Coursera\Ojemba\Git_ba
-sics\Git_basics> git status
-On branch main
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be c
-ommitted)
-        README.md
-
-nothing added to commit but untracked files present (us
-e "git add" to track)
-PS C:\Users\Lenovo\Desktop\work1\Coursera\Ojemba\Git_ba
 sics\Git_basics> git add .
 PS C:\Users\Lenovo\Desktop\work1\Coursera\Ojemba\Git_ba
 sics\Git_basics> git commit -m 'First commit'
@@ -55,10 +29,6 @@ PS C:\Users\Lenovo\Desktop\work1\Coursera\Ojemba\Git_ba
 sics\Git_basics> git branch -m main master
 PS C:\Users\Lenovo\Desktop\work1\Coursera\Ojemba\Git_basic
 s\Git_basics> git branch dev
-PS C:\Users\Lenovo\Desktop\work1\Coursera\Ojemba\Git_basic
-s\Git_basics> git status
-On branch main
-Your branch is up to date with 'origin/main'.
 PS C:\Users\Lenovo\Desktop\work1\Coursera\Ojemba\Git_basic
 s\Git_basics> git push origin dev
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0

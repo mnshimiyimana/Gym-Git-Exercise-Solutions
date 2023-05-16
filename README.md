@@ -712,18 +712,12 @@ Date:   Tue May 16 15:28:38 2023 +0200
 commit 650475af7cbd4f38a52e587f5436a825579ea6f1
 Author: mnshimiyimana <m.nshimiyim@alustudent.com>
 Date:   Tue May 16 15:17:02 2023 +0200
-
-Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git_basics (ft/home-page-redesign)
-$
-
 Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git_basics (ft/home-page-redesign)
 $ git add .
-
 Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git_basics (ft/home-page-redesign)
 $ git commit -m 'Changes'
 [ft/home-page-redesign a4fde3f] Changes
  1 file changed, 6 insertions(+), 1 deletion(-)
-
 Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git_basics (ft/home-page-redesign)
 $ git push
 fatal: The current branch ft/home-page-redesign has no upstream branch.

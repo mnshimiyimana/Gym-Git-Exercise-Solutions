@@ -923,7 +923,7 @@ To https://github.com/mnshimiyimana/Gym-Git-Exercise-Solutions.git
  ```
 
  ## Bundle 5
- ### Exercise 1
+ ### Exercise 2
 
  ```bash
  Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-cafe-exercise (main)

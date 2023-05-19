@@ -748,3 +748,218 @@ To https://github.com/mnshimiyimana/Git_basics.git
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
 ```
+## Bundle 4
+### Exercise 1
+
+```bash
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (main)
+$ git remote add git-copy https://github.com/mnshimiyimana/git-exercise-clone.git
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (main)
+$ git remote
+git-copy
+origin
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (main)
+$ git status 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (main)
+$ git add .
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (main)
+$ git commit -m 'Changes'
+[main d45d9a6] Changes
+ 1 file changed, 1 insertion(+)
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 301 bytes | 301.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/mnshimiyimana/Gym-Git-Exercise-Solutions.git
+   f6adde5..d45d9a6  main -> main
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (main)
+$ git push git-copy
+Enumerating objects: 60, done.
+Counting objects: 100% (60/60), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (32/32), done.
+Writing objects: 100% (60/60), 10.67 KiB | 10.67 MiB/s, done.
+Total 60 (delta 21), reused 53 (delta 18), pack-reused 0
+remote: Resolving deltas: 100% (21/21), done.
+To https://github.com/mnshimiyimana/git-exercise-clone.git
+ * [new branch]      main -> main
+ ```
+### Exercise 2
+
+```bash
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (ft/footer)       
+$ git add .
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (ft/footer)       
+$ git commit -m 'New file'
+[ft/footer 31a9883] New file
+ 1 file changed, 6 insertions(+)
+ create mode 100644 footer.html
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (ft/footer)       
+$ git status
+On branch ft/footer
+nothing to commit, working tree clean
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (ft/footer)       
+$ git status
+On branch ft/footer
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   footer.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (ft/footer)       
+$ git add .
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (ft/footer)       
+$ git commit -m 'Changes'
+[ft/footer 32fe01c] Changes
+ 1 file changed, 2 insertions(+)
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (ft/footer)       
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (ft/footer)       
+$  git push --set-upstream origin ft/footer
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 593 bytes | 296.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/mnshimiyimana/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote:
+To https://github.com/mnshimiyimana/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (ft/footer)       
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (ft/squashing)    
+$ git merge --squash ft/footer
+Updating d45d9a6..32fe01c
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+ create mode 100644 footer.html
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (ft/squashing)    
+$ git status
+On branch ft/squashing
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   footer.html
+
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (ft/squashing)    
+$ git commit -m 'footer changes squashing'
+[ft/squashing 9c2ba90] footer changes squashing
+ 1 file changed, 8 insertions(+)
+ create mode 100644 footer.html
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Gym-Git-Exercise-Solutions/Gym-Git-Exercise-Solutions-1 (ft/squashing)    
+$ git push origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 352 bytes | 117.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/mnshimiyimana/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/mnshimiyimana/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+ ```
+
+ ## Bundle 5
+ ### Exercise 1
+
+ ```bash
+ Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-cafe-exercise (main)
+$ cd git-cafe-exercise/
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-cafe-exercise/git-cafe-exercise (main)
+$ ls
+bat/  css/  images/  index.html  index-1.html  index-2.html  index-3.html  index-4.html  js/  README.md
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-cafe-exercise/git-cafe-exercise (main)
+$ git add .
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-cafe-exercise/git-cafe-exercise (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-cafe-exercise/git-cafe-exercise (main)
+$ git commit -m 'Changes'
+[main 177c7b4] Changes
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-cafe-exercise/git-cafe-exercise (main)
+$ git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 317 bytes | 105.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/mnshimiyimana/git-cafe-exercise.git
+   d1d3f9c..177c7b4  main -> main
+   ```

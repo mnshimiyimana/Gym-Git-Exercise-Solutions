@@ -963,3 +963,122 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/mnshimiyimana/git-cafe-exercise.git
    d1d3f9c..177c7b4  main -> main
    ```
+
+## Bundle 6
+### Exercise 1
+```bash
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-Cafe-Exercise (main)
+$ git checkout -b ft/menu
+Switched to a new branch 'ft/menu'
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-Cafe-Exercise (ft/menu)
+$ git add .
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-Cafe-Exercise (ft/menu)
+$ git commit -m 'Menu page'
+[main 177c7b4] Changes
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-Cafe-Exercise (ft/menu)
+$ git push
+fatal: The current branch ft/menu has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/menu
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-Cafe-Exercise (ft/menu)
+$ git push origin ft/menu
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 352 bytes | 117.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/menu' on GitHub by visiting:
+remote:      https://github.com/mnshimiyimana/Git-Cafe-Exercise/pull/new/ft/menu
+remote:
+To https://github.com/mnshimiyimana/Git-Cafe-Exercise.git
+ * [new branch]      ft/menu -> ft/menu
+ ```
+
+ ### Exercise 2
+
+```bash
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-Cafe-Exercise (ft/menu)
+$ git checkout -b bug-fix
+Switched to a new branch 'bug-fix'
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-Cafe-Exercise (bug-fix)
+$ git add .
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-Cafe-Exercise (bug-fix)
+$ git commit -m 'Title change'
+[main 177c7b4] Title change
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-Cafe-Exercise (bug-fix)
+$ git push
+fatal: The current branch ft/menu has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bug-fix
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-Cafe-Exercise (bug-fix)
+$ git push origin bug-fix
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 352 bytes | 117.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/menu' on GitHub by visiting:
+remote:      https://github.com/mnshimiyimana/Git-Cafe-Exercise/pull/new/bug-fix
+remote:
+To https://github.com/mnshimiyimana/Git-Cafe-exercise.git
+ * [new branch]      bug-fix -> bug-fix
+ ```
+
+### Exercise 3
+
+```bash
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-Cafe-exercise (bug-fix)
+$ git checkout main
+Switched to a new branch 'main'
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-Cafe-exercise (main)
+$ git add .
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-Cafe-exercise (main)
+$ git commit -m 'Changes'
+[main 177c7b4] Changes
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Lenovo@DESKTOP-7E3EPVK MINGW64 ~/Desktop/work1/Coursera/Ojemba/Git_basics/Git-Cafe-exercise (main)
+$ git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 317 bytes | 105.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/mnshimiyimana/git-cafe-exercise.git
+   d1d3f9c..177c7b4  main -> main
+```
+
+
+
+
+
+
+
